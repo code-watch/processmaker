@@ -73,7 +73,7 @@ Follow these steps to configure basic authentication settings after selecting th
 ### Edit Bearer Token Settings
 
 {% hint style="info" %}
-If you are configuring an Endpoint to make a request \(contact\) the ProcessMaker API associated with your ProcessMaker instance, first generate an API token for the ProcessMaker user account that contacts the ProcessMaker API before staring this procedure. See [Generate an API Token](../../processmaker-administration/add-users/manage-user-accounts/edit-a-user-account.md#generate-an-api-token). Note that your ProcessMaker user account must have appropriate permissions to generate a ProcessMaker API token.
+If you are configuring this ProcessMaker Data Connector to interact with \(make requests to\) the ProcessMaker API associated with your ProcessMaker instance, first generate an API token for the ProcessMaker user account that contacts the ProcessMaker API before staring this procedure. See [Generate an API Token](../../processmaker-administration/add-users/manage-user-accounts/edit-a-user-account.md#generate-an-api-token), and then follow that procedure in a new Web browser tab or window so the **Authorization** tab in this ProcessMaker Data Connector remains accessible. Note that your ProcessMaker user account must have appropriate permissions to generate a ProcessMaker API token.
 {% endhint %}
 
 Follow these steps to configure bearer token settings after selecting the **Bearer Token** option from the [**Authorization** tab](edit-a-data-connector.md#edit-authorization):
@@ -84,15 +84,20 @@ Follow these steps to configure bearer token settings after selecting the **Bear
    If an access token has already been entered into this ProcessMaker Data Connector, it displays in the **Token** setting.
 
 2. Verify that this ProcessMaker Data Connector authenticates using SSL certification. If the **Enable SSL certificate verification** toggle key is enabled, the ProcessMaker Data Connector connects to the data source host using HTTPS protocol for a secure connection. The **Enable SSL certificate verification** toggle key is enabled by default.
-3. If this ProcessMaker Data Connector requires a new access token, follow these steps:
-   1. Click the **Get Access Token** button. The **Request token** screen displays. ![](../../.gitbook/assets/authorization-tab-bearer-token-request-data-connector-package.png) 
-   2. In the **URL Token** setting, enter the URL to request the access token from the data source host to which the ProcessMaker Data Connector sends for authentication.
-   3. In the **User** setting, enter or edit the username that authenticates with the data source host.
-   4. In the **Password** setting, enter or edit the password that authenticates with the data source host.
-   5. Click the **Get Access Token** button. If the URL entered in the **URL Token** setting is correct for that data source host, then the access token displays below the **Password** setting.
-   6. Copy the access token, and then click **Close** to return to the **Authorization** tab.
-4. In the **Token** setting, paste the access token.
-5. If no other changes are necessary, click **Save**. The following message displays: **The Data Connector was saved**.
+3. If this ProcessMaker Data Connector requires a new access token, do one of the following:
+   * **Use the access token to interact with \(make requests to\) the ProcessMaker API associated with your ProcessMaker instance:**
+     1. Ensure that the access token for the ProcessMaker user account that contacts the ProcessMaker API is copied. If not, see [Generate an API Token](../../processmaker-administration/add-users/manage-user-accounts/edit-a-user-account.md#generate-an-api-token) before continuing. Follow that procedure in a new Web browser tab or window so the **Authorization** tab in this ProcessMaker Data Connector remains accessible.
+     2. In the **Token** setting, paste the generated API token copied from the ProcessMaker user account.
+     3. If no other changes are necessary, click **Save**. The following message displays: **The Data Connector was saved**.
+   * **Use the access token to interact with \(make requests to\) a third-party data source:**
+     1. Click the **Get Access Token** button. The **Request token** screen displays. ![](../../.gitbook/assets/authorization-tab-bearer-token-request-data-connector-package.png) 
+     2. In the **URL Token** setting, enter the URL to request the access token from the data source host to which the ProcessMaker Data Connector sends for authentication.
+     3. In the **User** setting, enter or edit the username that authenticates with the data source host.
+     4. In the **Password** setting, enter or edit the password that authenticates with the data source host.
+     5. Click the **Get Access Token** button. If the URL entered in the **URL Token** setting is correct for that data source host, then the access token displays below the **Password** setting.
+     6. Copy the access token, and then click **Close** to return to the **Authorization** tab.
+     7. In the **Token** setting, paste the access token.
+     8. If no other changes are necessary, click **Save**. The following message displays: **The Data Connector was saved**.
 
 ### Edit Auth 2.0 Password Settings
 
