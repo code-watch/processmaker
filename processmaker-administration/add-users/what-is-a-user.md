@@ -23,7 +23,7 @@ Note that any person who interacts with a Request is not necessarily a ProcessMa
 
 {% page-ref page="manage-user-accounts/edit-a-user-account.md" %}
 
-{% page-ref page="manage-user-accounts/remove-a-user-account.md" %}
+{% page-ref page="manage-user-accounts/manage-deleted-user-accounts/remove-a-user-account.md" %}
 
 {% page-ref page="manage-user-accounts/create-a-user-account.md" %}
 

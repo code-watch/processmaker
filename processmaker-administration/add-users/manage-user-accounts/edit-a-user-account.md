@@ -17,7 +17,9 @@ See the [Users](../../permission-descriptions-for-users-and-groups.md#users) per
 
 Follow these steps to edit a ProcessMaker user account:
 
-1. [View all ProcessMaker user accounts.](view-all-users.md) The **Users** page displays.
+1. Do one of the following:
+   * [View all ProcessMaker user accounts.](view-all-users.md) The **Users** tab displays.
+   * [View all deleted ProcessMaker user accounts](manage-deleted-user-accounts/view-or-edit-deleted-user-accounts.md) that may potentially be restored. The **Deleted Users** tab displays.
 2. Click the **Edit** icon![](../../../.gitbook/assets/edit-icon.png) for the ProcessMaker user account to edit. The **Information** tab displays for that ProcessMaker user account.  
 
    ![](../../../.gitbook/assets/edit-user-information-tab-admin.png)
@@ -161,11 +163,11 @@ Follow these steps to delete an API token:
 
 {% page-ref page="view-all-users.md" %}
 
+{% page-ref page="create-a-user-account.md" %}
+
 {% page-ref page="search-for-a-user.md" %}
 
-{% page-ref page="remove-a-user-account.md" %}
-
-{% page-ref page="create-a-user-account.md" %}
+{% page-ref page="./" %}
 
 {% page-ref page="../../assign-groups-to-users/what-is-a-group.md" %}
 

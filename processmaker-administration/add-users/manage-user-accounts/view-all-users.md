@@ -17,7 +17,7 @@ See the [Users](../../permission-descriptions-for-users-and-groups.md#users) per
 Follow these steps to view all ProcessMaker user accounts in your organization:
 
 1. [Log on](../../../using-processmaker/log-in.md#log-in) to ProcessMaker.
-2. Click the **Admin** option from the top menu. The **Users** page displays all ProcessMaker user accounts.
+2. Click the **Admin** option from the top menu. The **Users** tab displays all ProcessMaker user accounts.
 
 {% hint style="info" %}
 Click the **Users** ![](../../../.gitbook/assets/users-icon-admin.png) icon to view the **Users** page when you are viewing other administrative-related pages.
@@ -52,7 +52,7 @@ Click the **Edit** icon![](../../../.gitbook/assets/edit-icon.png). See [Edit a 
 
 ### Delete a ProcessMaker User Account
 
-Click the **Delete** icon![](../../../.gitbook/assets/trash-icon-process-modeler-processes.png). See [Delete a User Account](remove-a-user-account.md#delete-a-processmaker-user-account).
+Click the **Delete** icon![](../../../.gitbook/assets/trash-icon-process-modeler-processes.png). See [Delete a User Account](manage-deleted-user-accounts/remove-a-user-account.md#delete-a-processmaker-user-account).
 
 ### No ProcessMaker User Accounts?
 
@@ -71,7 +71,7 @@ If no ProcessMaker user accounts exist, the following message displays: **No Dat
 
 {% page-ref page="edit-a-user-account.md" %}
 
-{% page-ref page="remove-a-user-account.md" %}
+{% page-ref page="manage-deleted-user-accounts/" %}
 
 {% page-ref page="create-a-user-account.md" %}
 

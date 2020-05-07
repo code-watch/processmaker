@@ -17,7 +17,7 @@ See the [Users](../../permission-descriptions-for-users-and-groups.md#users) per
 
 Follow these steps to create a ProcessMaker user account:
 
-1. [View all ProcessMaker user accounts.](view-all-users.md) The **Users** page displays.
+1. [View all ProcessMaker user accounts.](view-all-users.md) The **Users** tab displays.
 2. Click the **+User** button. The **Create User** screen displays.  
 
    ![](../../../.gitbook/assets/add-a-user-screen-admin.png)
@@ -32,7 +32,7 @@ Follow these steps to create a ProcessMaker user account:
 8. In the **Email** field, enter the unique email address associated with the ProcessMaker user account. This is a required field.
 9. In the **Password** field, enter the password associated with the ProcessMaker user account. Passwords must be at least eight \(8\) characters long. [Password special characters](https://www.owasp.org/index.php/Password_special_characters) are recommended. Password validation indicates how strong your password is if you enter a new password.
 10. In the **Confirm Password** field, confirm that the password matches that entered into the **New Password** field. Password validation indicates if the **New Password** and **Confirm Password** values do not match.
-11. Click **Save**. The following message displays: **The user was successfully created**. Furthermore, the **Information** tab displays for the new ProcessMaker user account to specify which groups and/or permissions to assign the new user account. See [Edit a User Account](edit-a-user-account.md#edit-a-processmaker-user-account).
+11. Click **Save**. The following message displays: **The user was successfully created**. Furthermore, the **Information** tab displays for the new ProcessMaker user account to specify which ProcessMaker groups and/or permissions to assign the new user account. See [Edit a User Account](edit-a-user-account.md#edit-a-processmaker-user-account).
 
 ## Related Topics
 
@@ -44,5 +44,5 @@ Follow these steps to create a ProcessMaker user account:
 
 {% page-ref page="edit-a-user-account.md" %}
 
-{% page-ref page="remove-a-user-account.md" %}
+{% page-ref page="manage-deleted-user-accounts/" %}
 

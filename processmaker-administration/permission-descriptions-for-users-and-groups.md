@@ -261,7 +261,7 @@ Select the **View Translations** permission to use any of the other permissions 
 The **Users** category contains the following permissions:
 
 * **Create Users:** Create a ProcessMaker user account from the **Users** page. Selecting this permission also selects the **Edit Users** permission. See [Create a New User Account](add-users/manage-user-accounts/create-a-user-account.md).
-* **Delete Users:** Delete a ProcessMaker user account from the **Users** page. See [Delete a User Account](add-users/manage-user-accounts/remove-a-user-account.md).
+* **Delete Users:** Delete a ProcessMaker user account from the **Users** page. See [Delete a User Account](add-users/manage-user-accounts/manage-deleted-user-accounts/remove-a-user-account.md).
 * **Edit Users:** Edit a ProcessMaker user account from the **Users** page. See [Edit a User Account](add-users/manage-user-accounts/edit-a-user-account.md).
 * **View Users:** View the table of ProcessMaker user accounts on the **Users** page. See [View All Users Accounts](add-users/manage-user-accounts/view-all-users.md).
 

@@ -18,7 +18,7 @@ See the [Users](../../permission-descriptions-for-users-and-groups.md#users) per
 
 Follow these steps to search for a ProcessMaker user account:
 
-1. [View all ProcessMaker user accounts.](view-all-users.md) The **Users** page displays.
+1. [View all ProcessMaker user accounts.](view-all-users.md) The **Users** tab displays.
 2. Enter in the **Search** field the text to filter ProcessMaker user accounts using any of the following criteria:
    * **Username:** Filter by the ProcessMaker user account username that displays in the **Username** column.
    * **Full name:** Filter by the full name associated with the ProcessMaker user account that displays in the **Full Name** column.
@@ -35,9 +35,9 @@ If there are no search results, the following message displays: **No Results**.
 
 {% page-ref page="view-all-users.md" %}
 
+{% page-ref page="create-a-user-account.md" %}
+
 {% page-ref page="edit-a-user-account.md" %}
 
-{% page-ref page="remove-a-user-account.md" %}
-
-{% page-ref page="create-a-user-account.md" %}
+{% page-ref page="./" %}
 
