@@ -198,7 +198,7 @@ This JSON object contains four elements. Example: `"FullNameTask1": "Louis Caner
 
 Note the following:
 
-* Opening and closing curly brackets `({` and `})` represent the beginning and end of the JSON object, respectively.
+* Opening and closing curly brackets \(`{` and `}`\) represent the beginning and end of the JSON object, respectively.
 * A comma \(`,`\) must follow each element except the last element.
 * The elements in the JSON object are indented from the curly brackets for easier legibility. The formatting and indention have no effect on how a computer script parses \(reads\) the JSON.
 
@@ -214,11 +214,11 @@ Each JSON object element contains two components:
 
   **How You Use This in ProcessMaker:**
 
-  If the element's key name is referenced in another ProcessMaker asset using [mustache syntax](https://mustache.github.io/mustache.5.html) \(described in [Referencing Request Data](what-is-json.md#referencing-request-data)\), the value of that element enters into that ProcessMaker asset. Element values require specific syntax based on its [data type](what-is-json.md#json-data-types). Every key name must have a corresponding value. If the element has no value, use `null` to mean that the element contains no value; JSON elements cannot be undefined, so `null` defines that element with no value. See JSON Object Property Value Syntax for Common Data Types.
+  If the element's key name is referenced in another ProcessMaker asset using [mustache syntax](https://mustache.github.io/mustache.5.html) \(described in [Referencing Request Data](what-is-json.md#referencing-request-data)\), the value of that element enters into that ProcessMaker asset. Element values require specific syntax based on its [data type](what-is-json.md#json-data-types). Every key name must have a corresponding value. If the element has no value, use `null` to mean that the element contains no value; JSON elements cannot be undefined, so `null` defines that element with no value. See [JSON Data Types](what-is-json.md#json-data-types).
 
 ### JSON Arrays
 
-A JSON array is an ordered list of values or objects. Square brackets \(`[` `]`\) surround the JSON array. ProcessMaker reads \(parses\) the order of these values from left to right. Values in an array may be of any data type JSON supports. Below is an example of a JSON array using values of the **String** data type.
+A JSON array is an ordered list of values or objects. Square brackets \(`[` and `]`\) surround the JSON array. ProcessMaker reads \(parses\) the order of these values from left to right. Values in an array may be of any data type JSON supports. Below is an example of a JSON array using values of the **String** data type.
 
 ```text
 ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
@@ -268,7 +268,7 @@ Note the following:
 
 * Begin the JSON dot notation with `data.`, which indicates to reference ProcessMaker Request data.
 * The JSON dot notation indicates the nested location of the JSON object from which to reference the element's key name. Each nested location is separated by a period \(`.`\) to indicate each nested level. In this example, the object element from which to reference its value is not nested.
-* In square brackets \(`[` `]`\), indicate from which element key name to reference its value. Therefore, use `Headquarters` to reference the value corresponding with that element's key name.
+* In square brackets \(`[` and `]`\), indicate from which element key name to reference its value. Therefore, use `Headquarters` to reference the value corresponding with that element's key name.
 
 #### JSON Dot Notation to Reference a Specific Value in an Array
 
@@ -294,7 +294,7 @@ Note the following:
 
 * Begin the JSON dot notation with `data.`, which indicates to reference ProcessMaker Request data.
 * The JSON dot notation indicates the nested location of the JSON array from which to reference its value. Each nested location is separated by a period \(`.`\) to indicate each nested level. In this example, the array from which to reference its value is not nested.
-* In square brackets \(`[` `]`\), indicate which value in the array to reference beginning with `0`. Therefore, to reference the second value in this array, use `1` in this JSON dot notation.
+* In square brackets \(`[` and `]`\), indicate which value in the array to reference beginning with `0`. Therefore, to reference the second value in this array, use `1` in this JSON dot notation.
 
 ### JSON Data Types
 
@@ -333,7 +333,7 @@ Each data type requires specific syntax to be valid. Below is the syntax for eac
     <tr>
       <td style="text-align:left">Object as a value</td>
       <td style="text-align:left">
-        <p>Curly brackets (<code>{</code>  <code>}</code>).</p>
+        <p>Curly brackets (<code>{</code> and <code>}</code>).</p>
         <p>JSON objects as values follow the same syntax as JSON objects.</p>
       </td>
       <td style="text-align:left">
@@ -355,7 +355,7 @@ Each data type requires specific syntax to be valid. Below is the syntax for eac
       <td style="text-align:left">Array as a value</td>
       <td style="text-align:left">
         <p>Curly brackets surround the array, represented with surrounding square
-          brackets (<code>[</code>  <code>]</code>).</p>
+          brackets (<code>[</code> and <code>]</code>).</p>
         <p>See <a href="what-is-json.md#json-arrays">JSON Arrays</a> for information
           about arrays.</p>
       </td>
@@ -494,13 +494,13 @@ In this example, the JSON array `Employees` contains four values, each a nested 
 {% hint style="info" %}
 **How Can I Use This Request Data?**
 
-As a ProcessMaker designer, you can use Request data during that Request. Consider the following examples how the sample Request data above can be used in Process design:
+As a ProcessMaker designer, you can use [Request data](what-is-request-data.md) during that [Request](../using-processmaker/requests/what-is-a-request.md). Consider the following examples how the sample Request data above can be used in Process design:
 
-* In a Task: A Select List control in a ProcessMaker Screen displays a set of options as either check boxes or a multi-select drop-down menu for a Task. Configure the Select List control to get all JSON element values corresponding with the key name Username from the Employees array so that the Select List control displays BobBoss, BigD, HarryFeet, and BeattyRocker as options in the Task.
+* **In a Task:** A [Select List](../designing-processes/design-forms/screens-builder/control-descriptions/select-list-control-settings.md) control in a [ProcessMaker Screen](../designing-processes/design-forms/what-is-a-form.md) displays a set of options as either check boxes or a multi-select drop-down menu for a [Task](../using-processmaker/task-management/what-is-a-task.md). Configure the Select List control to get all JSON element values corresponding with the key name `Username` from the `Employees` array so that the Select List control displays **BobBoss**, **BigD**, **HarryFeet**, and **BeattyRocker** as options in the Task.
 
 ![](../.gitbook/assets/json-process-select-list-example.png) ****
 
-* **In a Process model:** During a Request, assign a Task to the ProcessMaker user that has the job title "Vice President" based on the `Title` key name in all nested JSON objects.
+* **In a Process model:** During a Request, assign a Task to the ProcessMaker [user](../processmaker-administration/add-users/what-is-a-user.md) that has the job title "Vice President" based on the `Title` key name in all nested JSON objects.
 {% endhint %}
 
 ## Related Topics
