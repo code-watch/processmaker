@@ -93,6 +93,7 @@ export default {
           params: {
             commentable_id: this.commentable_id,
             commentable_type: this.commentable_type,
+            includes: "children",
           },
         })
         .then((response) => {
