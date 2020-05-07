@@ -204,8 +204,10 @@
                 </div>
                 @if($canViewComments === true)
                     <div>
-                        <timeline commentable_id="{{ $request->getKey() }}"
-                                  commentable_type="{{ get_class($request) }}"/>
+                        <timeline 
+                            :commentable_id="{{ $request->getKey() }}"
+                            commentable_type="{{ get_class($request) }}"
+                            :read_only="{{ $request->status === 'COMPLETED'? 'true' : 'false'}}"/>
                     </div>
                 @endif
 

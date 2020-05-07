@@ -1,11 +1,12 @@
 <template>
   <div class="px-3 mb-2 timeline">
-    <template v-for="(item,index) in comments">
-      <component 
+    <template v-for="(item, index) in comments">
+      <component
         v-bind:is="component(item)"
         v-bind:key="`timeline-item-${index}`"
         v-bind:value="item"
         v-bind:icon="icon(item)"
+        :read_only="read_only"
         @refresh="load"
       />
     </template>
@@ -15,48 +16,72 @@
       v-bind:commentable_id="commentable_id"
       v-bind:commentable_type="commentable_type"
       @refresh="load"
+      v-if="!read_only"
     />
   </div>
 </template>
 
 <script>
 const SubjectIcons = {
-  'Task Complete': 'far fa-square',
-  'Gateway': 'far fa-square fa-rotate-45',
+  "Task Complete": "far fa-square",
+  Gateway: "far fa-square fa-rotate-45",
 };
 export default {
-  props: ["commentable_id", "commentable_type", "type", "hidden"],
+  props: {
+    commentable_id: {
+      type: Number,
+      required: true,
+    },
+    commentable_type: {
+      type: String,
+      required: true,
+    },
+    type: {
+      type: String,
+      required: false,
+    },
+    hidden: {
+      type: Boolean,
+      required: false,
+      default: false,
+    },
+    read_only: {
+      type: Boolean,
+      required: false,
+      default: false,
+    },
+  },
   data() {
     return {
-      newComment: '',
+      newComment: "",
       form: {
         subject: "",
         body: "",
         commentable_id: "",
         commentable_type: "",
         hidden: false,
-        type: "MESSAGE"
+        type: "MESSAGE",
       },
       comments: [],
       systemCommentUser: {
         id: null,
-        initials: "S"
-      }
+        initials: "S",
+      },
     };
   },
   watch: {},
   computed: {
     disabled() {
       return this.form.subject.trim() === "" || this.form.body.trim() === "";
-    }
+    },
   },
   methods: {
     component(item) {
       const component = `timeline-${item.type.toLowerCase()}`;
-      return component in Vue.options.components ? component : 'timeline-item';
+      return component in Vue.options.components ? component : "timeline-item";
     },
     icon(item) {
-      return SubjectIcons[item.subject] || '';
+      return SubjectIcons[item.subject] || "";
     },
     emptyForm() {
       this.form.subject = "";
@@ -67,10 +92,10 @@ export default {
         .get("comments", {
           params: {
             commentable_id: this.commentable_id,
-            commentable_type: this.commentable_type
-          }
+            commentable_type: this.commentable_type,
+          },
         })
-        .then(response => {
+        .then((response) => {
           this.comments = response.data.data;
         });
     },
@@ -80,15 +105,15 @@ export default {
       that.form.commentable_type = that.commentable_type;
       that.form.type = that.type ? that.type : "MESSAGE";
       that.form.hidden = that.hidden ? that.hidden : false;
-      ProcessMaker.apiClient.post("comments", that.form).then(response => {
+      ProcessMaker.apiClient.post("comments", that.form).then((response) => {
         that.load();
         that.emptyForm();
       });
-    }
+    },
   },
   mounted() {
     this.load();
-  }
+  },
 };
 </script>
 
@@ -128,7 +153,7 @@ export default {
 .timeline-badge {
   width: 28px;
   height: 24px;
-  margin-left:0px;
+  margin-left: 0px;
   padding: 0;
 }
 .timeline-icon {
