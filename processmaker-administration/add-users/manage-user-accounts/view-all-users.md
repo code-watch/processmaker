@@ -17,19 +17,19 @@ See the [Users](../../permission-descriptions-for-users-and-groups.md#users) per
 Follow these steps to view all ProcessMaker user accounts in your organization:
 
 1. [Log on](../../../using-processmaker/log-in.md#log-in) to ProcessMaker.
-2. Click the **Admin** option from the top menu. The **Users** tab displays all ProcessMaker user accounts.
+2. Click the **Admin** option from the top menu. The **Users** tab displays all ProcessMaker user accounts that have not been deleted. For deleted ProcessMaker user accounts, see [View Deleted User Accounts](manage-deleted-user-accounts/view-or-edit-deleted-user-accounts.md#view-all-scripts).
 
 {% hint style="info" %}
-Click the **Users** ![](../../../.gitbook/assets/users-icon-admin.png) icon to view the **Users** page when you are viewing other administrative-related pages.
+Click the **Users** ![](../../../.gitbook/assets/users-icon-admin.png) icon to view the **Users** tab when you are viewing other administrative-related pages.
 {% endhint %}
 
-![&quot;Users&quot; page displays all users in your organization](../../../.gitbook/assets/users-page-admin.png)
+![&quot;Users&quot; tab displays all ProcessMaker users in your organization that have not been deleted](../../../.gitbook/assets/users-tab-page-admin.png)
 
-The **Users** page displays the following information in tabular format about ProcessMaker user accounts:
+The **Users** tab displays the following information in tabular format about ProcessMaker user accounts that have not been deleted:
 
 * **Username:** The **Username** column displays the username associated with the ProcessMaker user account.
 * **Full Name:** The **Full Name** column displays the full name associated with ProcessMaker user account.
-* **Avatar:** The **Avatar** column displays avatar image for the ProcessMaker user account. If there is not an avatar image for the ProcessMaker user account, that person's full name initials display. See [Change Your User Avatar](../../../using-processmaker/profile-settings.md#change-your-user-avatar).
+* **Avatar:** The **Avatar** column displays the avatar image for the ProcessMaker user account. If there is not an avatar image for the ProcessMaker user account, that person's full name initials display. See [Change Your User Avatar](../../../using-processmaker/profile-settings.md#change-your-user-avatar).
 * **Status:** The **Status** column displays one of the following statuses for the ProcessMaker user account:
   * **Active:** An Active ProcessMaker user account is one in which a person can use his or her user account to log on to ProcessMaker.
   * **Inactive:** An Inactive ProcessMaker user account is one in which a person cannot use his or her user account to log on to ProcessMaker.
